@@ -1,12 +1,10 @@
 import streamlit as st
-from etl import (
-    etl_orcamentos,
-    etl_insumos,
-    etl_pagamentos,
-    etl_receitas,
-    etl_inadimplencia,
-    etl_mov_bancarias
-)
+from utils.etl_inadimplencia import etl_inadimplencia
+from utils.etl_insumos import etl_insumos
+from utils.etl_mov_bancarias import etl_mov_bancarias
+from utils.etl_orcamentos import etl_orcamentos
+from utils.etl_pagamentos import etl_pagamentos
+from utils.etl_receitas import etl_receitas
 from datetime import datetime
 import sys
 import os
